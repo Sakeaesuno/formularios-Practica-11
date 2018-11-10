@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ING Direct</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <table>
     <header>
-        <center><img src="img\header.PNG" alt="Progreso de pasos"></center>
+        <tr><center><img src="img\header.PNG" alt="Progreso de pasos"></center></tr>
     </header>
     <nav>
-       <a href="https://www.ing.es/"> <img src="img\nav.PNG" alt="Informacion ING"></a>
+       <td><a href="https://www.ing.es/"> <img src="img\nav.PNG" alt="Informacion ING"></a></td>
     </nav>
     <main>
         <h3>Datos personales</h3>
+        <td id=formulario>
         <pre>
         <p>Tratamiento:     Nombre:                   Apellido 1:             Apellido 2: 
 <input type="radio" name="hm" value="h" required> Sr. <input type="radio" name="hm" value="m"> Sra. <input type="text" name="nombre" required>  <input type="text" name="apellido1" required>  <input type="text" name="apellido2" required>
@@ -1054,7 +1057,7 @@ Proposito de la cuenta: Origen de sus ahorros:
             <option value="5">Otros</option>
             <option value="6">Prestamos</option>
         </select>
-<div>
+<div id="medio">
 Tipo de via:           Direccion:              Numero:                Piso:
 <select name="Via">
         <option value="-">Selecione una opcion</option>
@@ -1123,15 +1126,15 @@ Tipo de via:           Direccion:              Numero:                Piso:
         </select> <input type="number" name="numero">
 Telefono movil:          Telefono particular:    Direccion de e-mail:
 <input type="number" name="numero"> <input type="number" name="numero"> <input type="text" name="texto">
-</div>
-<div>
-Para ofrecerle un mejor servicio nos seria util conocer si posee en otra entidad:
+</div><hr><div>Para ofrecerle un mejor servicio nos seria util conocer si posee en otra entidad:
 <input type="radio" name="radio1" value="1">Plan de pensiones <input type="radio" name="radio2" value="2">Fondos<input type="radio" name="radio3" value="3">Acciones<input type="radio" name="radio4" value="4">OHipotecas<input type="radio" name="radio5" value="5">Prestamos<input type="radio" name="radio" value="6">Seguro de vida
-<div>
+<div><hr>
 Puede consultar en nuestra Web o solicitarnos toda la Información Precontractual de nuestros productos. Al pulsar "Continuar" está aceptando la Cláusula de Protección de datos.<input type="submit" value="Continuar">
 </div>
 </p>
         </pre>
+        </td>
     </main>
+</table>
 </body>
 </html>
